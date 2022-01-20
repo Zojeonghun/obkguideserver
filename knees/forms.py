@@ -24,6 +24,7 @@ class KneeAdminForm(forms.ModelForm):
             'code',
             'name',
             'description',
+            'knee_image',
             'mobis_grade',
             'weight',
             'activity',

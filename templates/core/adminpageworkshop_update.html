@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load widget_tweaks %}
 
 {% block style %}
-<link rel='stylesheet' href='{% static 'css/core/adminpage_feet.css' %}'>
+<link rel='stylesheet' href='{% static 'css/core/adminpage_prod.css' %}'>
 {% endblock style %}
 
 
@@ -16,7 +17,7 @@
 회사명{{form.name}}
 </div>
 <div>
-지역{{form.location}}
+지역{{form.location|add_class:'form-select'}}
 </div>
 <div>
 주소{{form.address_text}}

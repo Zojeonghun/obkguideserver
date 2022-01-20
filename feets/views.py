@@ -1,6 +1,6 @@
 
 from django.core import paginator
-from django.views.generic import ListView, DetailView, UpdateView
+from django.views.generic import ListView, DetailView, UpdateView, DeleteView
 from django.shortcuts import render
 from django.urls import reverse
 from . import models, forms
@@ -115,6 +115,14 @@ class FeetAdminUpdateView(UpdateView):
     template_name = 'core/adminpagefeet_update.html'
     context_object_name = 'feet'
     form_class = forms.FeetAdminForm
+
+    def get_success_url(self):
+        return reverse('feets:feets-admin-list')
+
+class FeetDeleteView(DeleteView):
+    model = models.Feet
+    template_name = "posts/faq_delete.html"
+    pk_url_kwarg = "pk"
 
     def get_success_url(self):
         return reverse('feets:feets-admin-list')

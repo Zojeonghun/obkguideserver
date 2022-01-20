@@ -88,8 +88,19 @@ h2 {
 
 .home_text_3 {
     display: none;
+    text-align: center;
 }
 
+.start_btn {
+    font-size: 20px;
+    color: #053282;
+    border: #053282 1px solid;
+    border-radius: 5px;
+    padding: 0 8px;
+}
+.start_btn_box {
+    margin-top: 20px;
+}
 
 
 

@@ -8,10 +8,11 @@
 
 {% block content %}
 
-<div class='back_btn'>
-    <a onclick='goBack()'><i class="fas fa-arrow-left"></i> 뒤로가기</a>
-</div>
+
 <form method='post'>
+    <div class='back_btn'>
+        <a onclick='goBack()'><i class="fas fa-arrow-left"></i> 뒤로가기</a>
+    </div>
     {% csrf_token %}
 
 <div class='title'>
@@ -22,7 +23,7 @@
 </div>
 <div>
     <h1>카테코리:</h1>
-{{form.category}}
+{{form.category|add_class:'form-select'}}
 </div>
 
 <button class='submit_btn'>수정완료</button>

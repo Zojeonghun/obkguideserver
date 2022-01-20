@@ -49,7 +49,7 @@ class PostUpdateView(UpdateView):
     context_object_name = 'post'
 
     def get_success_url(self):
-        return reverse('posts:posts-list')
+        return reverse('posts:posts-admin-list')
 
 class PostCreateView(CreateView):
     model = models.Content
@@ -57,7 +57,7 @@ class PostCreateView(CreateView):
     template_name = 'posts/faq_update.html'
 
     def get_success_url(self):
-        return reverse('posts:posts-list')
+        return reverse('posts:posts-admin-list')
 
 
 class PostDeleteView(DeleteView):
@@ -66,6 +66,11 @@ class PostDeleteView(DeleteView):
     pk_url_kwarg = "pk"
 
     def get_success_url(self):
-        return reverse('posts:posts-list')
+        return reverse('posts:posts-admin-list')
+
+class PostAdminListView(ListView):
+    model = models.Content
+    template_name = 'core/adminpage_faq_list.html'
+    context_object_name = 'posts'
 
 
