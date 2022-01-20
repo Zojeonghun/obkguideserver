@@ -12,7 +12,7 @@
 ~h
 # Command Line History (newest to oldest):
 :wq!
-|2,0,1642658463,,"wq!"
+|2,0,1642659147,,"wq!"
 
 # Search String History (newest to oldest):
 
@@ -25,34 +25,54 @@
 # Registers:
 
 # File marks:
-'0  60  0  ~/templates/partials/header.html
-|4,48,60,0,1642658463,"~/templates/partials/header.html"
-'1  18  5  ~/config/settings.py
-|4,49,18,5,1642574226,"~/config/settings.py"
-'2  19  0  ~/config/settings.py
-|4,50,19,0,1642573165,"~/config/settings.py"
+'0  1  0  ~/templates/partials/hearder.html
+|4,48,1,0,1642659147,"~/templates/partials/hearder.html"
+'1  60  0  ~/templates/partials/header.html
+|4,49,60,0,1642658463,"~/templates/partials/header.html"
+'2  18  5  ~/config/settings.py
+|4,50,18,5,1642574226,"~/config/settings.py"
 '3  19  0  ~/config/settings.py
 |4,51,19,0,1642573165,"~/config/settings.py"
-'4  146  0  /OBK/config/settings.py
-|4,52,146,0,1642570013,"/OBK/config/settings.py"
-'5  18  7  /OBK/config/settings.py
-|4,53,18,7,1642569575,"/OBK/config/settings.py"
+'4  19  0  ~/config/settings.py
+|4,52,19,0,1642573165,"~/config/settings.py"
+'5  146  0  /OBK/config/settings.py
+|4,53,146,0,1642570013,"/OBK/config/settings.py"
 '6  18  7  /OBK/config/settings.py
 |4,54,18,7,1642569575,"/OBK/config/settings.py"
+'7  18  7  /OBK/config/settings.py
+|4,55,18,7,1642569575,"/OBK/config/settings.py"
 
 # Jumplist (newest first):
+-'  1  0  ~/templates/partials/hearder.html
+|4,39,1,0,1642659147,"~/templates/partials/hearder.html"
 -'  60  0  ~/templates/partials/header.html
 |4,39,60,0,1642658463,"~/templates/partials/header.html"
+-'  60  0  ~/templates/partials/header.html
+|4,39,60,0,1642658463,"~/templates/partials/header.html"
+-'  1  0  ~/templates/partials/header.html
+|4,39,1,0,1642657925,"~/templates/partials/header.html"
 -'  1  0  ~/templates/partials/header.html
 |4,39,1,0,1642657925,"~/templates/partials/header.html"
 -'  18  5  ~/config/settings.py
 |4,39,18,5,1642574226,"~/config/settings.py"
 -'  18  5  ~/config/settings.py
 |4,39,18,5,1642574226,"~/config/settings.py"
+-'  18  5  ~/config/settings.py
+|4,39,18,5,1642574226,"~/config/settings.py"
+-'  18  5  ~/config/settings.py
+|4,39,18,5,1642574226,"~/config/settings.py"
 -'  19  0  ~/config/settings.py
 |4,39,19,0,1642574076,"~/config/settings.py"
 -'  19  0  ~/config/settings.py
 |4,39,19,0,1642574076,"~/config/settings.py"
+-'  19  0  ~/config/settings.py
+|4,39,19,0,1642574076,"~/config/settings.py"
+-'  19  0  ~/config/settings.py
+|4,39,19,0,1642574076,"~/config/settings.py"
+-'  19  0  ~/config/settings.py
+|4,39,19,0,1642573165,"~/config/settings.py"
+-'  19  0  ~/config/settings.py
+|4,39,19,0,1642573165,"~/config/settings.py"
 -'  19  0  ~/config/settings.py
 |4,39,19,0,1642573165,"~/config/settings.py"
 -'  19  0  ~/config/settings.py
@@ -65,6 +85,30 @@
 |4,39,1,0,1642573128,"~/config/settings.py"
 -'  1  0  ~/config/settings.py
 |4,39,1,0,1642573128,"~/config/settings.py"
+-'  1  0  ~/config/settings.py
+|4,39,1,0,1642573128,"~/config/settings.py"
+-'  1  0  ~/config/settings.py
+|4,39,1,0,1642573128,"~/config/settings.py"
+-'  1  0  ~/config/settings.py
+|4,39,1,0,1642573128,"~/config/settings.py"
+-'  1  0  ~/config/settings.py
+|4,39,1,0,1642573128,"~/config/settings.py"
+-'  146  0  /OBK/config/settings.py
+|4,39,146,0,1642570013,"/OBK/config/settings.py"
+-'  146  0  /OBK/config/settings.py
+|4,39,146,0,1642570013,"/OBK/config/settings.py"
+-'  146  0  /OBK/config/settings.py
+|4,39,146,0,1642570013,"/OBK/config/settings.py"
+-'  146  0  /OBK/config/settings.py
+|4,39,146,0,1642570013,"/OBK/config/settings.py"
+-'  146  0  /OBK/config/settings.py
+|4,39,146,0,1642570013,"/OBK/config/settings.py"
+-'  146  0  /OBK/config/settings.py
+|4,39,146,0,1642570013,"/OBK/config/settings.py"
+-'  146  0  /OBK/config/settings.py
+|4,39,146,0,1642570013,"/OBK/config/settings.py"
+-'  146  0  /OBK/config/settings.py
+|4,39,146,0,1642570013,"/OBK/config/settings.py"
 -'  146  0  /OBK/config/settings.py
 |4,39,146,0,1642570013,"/OBK/config/settings.py"
 -'  146  0  /OBK/config/settings.py
@@ -98,6 +142,34 @@
 -'  18  7  /OBK/config/settings.py
 |4,39,18,7,1642569932,"/OBK/config/settings.py"
 -'  18  7  /OBK/config/settings.py
+|4,39,18,7,1642569932,"/OBK/config/settings.py"
+-'  18  7  /OBK/config/settings.py
+|4,39,18,7,1642569932,"/OBK/config/settings.py"
+-'  18  7  /OBK/config/settings.py
+|4,39,18,7,1642569932,"/OBK/config/settings.py"
+-'  18  7  /OBK/config/settings.py
+|4,39,18,7,1642569932,"/OBK/config/settings.py"
+-'  18  7  /OBK/config/settings.py
+|4,39,18,7,1642569932,"/OBK/config/settings.py"
+-'  18  7  /OBK/config/settings.py
+|4,39,18,7,1642569932,"/OBK/config/settings.py"
+-'  18  7  /OBK/config/settings.py
+|4,39,18,7,1642569932,"/OBK/config/settings.py"
+-'  18  7  /OBK/config/settings.py
+|4,39,18,7,1642569932,"/OBK/config/settings.py"
+-'  18  7  /OBK/config/settings.py
+|4,39,18,7,1642569575,"/OBK/config/settings.py"
+-'  18  7  /OBK/config/settings.py
+|4,39,18,7,1642569575,"/OBK/config/settings.py"
+-'  18  7  /OBK/config/settings.py
+|4,39,18,7,1642569575,"/OBK/config/settings.py"
+-'  18  7  /OBK/config/settings.py
+|4,39,18,7,1642569575,"/OBK/config/settings.py"
+-'  18  7  /OBK/config/settings.py
+|4,39,18,7,1642569575,"/OBK/config/settings.py"
+-'  18  7  /OBK/config/settings.py
+|4,39,18,7,1642569575,"/OBK/config/settings.py"
+-'  18  7  /OBK/config/settings.py
 |4,39,18,7,1642569575,"/OBK/config/settings.py"
 -'  18  7  /OBK/config/settings.py
 |4,39,18,7,1642569575,"/OBK/config/settings.py"
@@ -113,6 +185,32 @@
 |4,39,18,7,1642569575,"/OBK/config/settings.py"
 -'  18  7  /OBK/config/settings.py
 |4,39,18,7,1642569575,"/OBK/config/settings.py"
+-'  18  7  /OBK/config/settings.py
+|4,39,18,7,1642569575,"/OBK/config/settings.py"
+-'  18  7  /OBK/config/settings.py
+|4,39,18,7,1642569575,"/OBK/config/settings.py"
+-'  1  0  /OBK/config/settings.py
+|4,39,1,0,1642569520,"/OBK/config/settings.py"
+-'  1  0  /OBK/config/settings.py
+|4,39,1,0,1642569520,"/OBK/config/settings.py"
+-'  1  0  /OBK/config/settings.py
+|4,39,1,0,1642569520,"/OBK/config/settings.py"
+-'  1  0  /OBK/config/settings.py
+|4,39,1,0,1642569520,"/OBK/config/settings.py"
+-'  1  0  /OBK/config/settings.py
+|4,39,1,0,1642569520,"/OBK/config/settings.py"
+-'  1  0  /OBK/config/settings.py
+|4,39,1,0,1642569520,"/OBK/config/settings.py"
+-'  1  0  /OBK/config/settings.py
+|4,39,1,0,1642569520,"/OBK/config/settings.py"
+-'  1  0  /OBK/config/settings.py
+|4,39,1,0,1642569520,"/OBK/config/settings.py"
+-'  1  0  /OBK/config/settings.py
+|4,39,1,0,1642569520,"/OBK/config/settings.py"
+-'  1  0  /OBK/config/settings.py
+|4,39,1,0,1642569520,"/OBK/config/settings.py"
+-'  1  0  /OBK/config/settings.py
+|4,39,1,0,1642569520,"/OBK/config/settings.py"
 -'  1  0  /OBK/config/settings.py
 |4,39,1,0,1642569520,"/OBK/config/settings.py"
 -'  1  0  /OBK/config/settings.py
@@ -147,6 +245,10 @@
 |4,39,1,0,1642569520,"/OBK/config/settings.py"
 
 # History of marks within files (newest to oldest):
+
+> ~/templates/partials/hearder.html
+	*	1642659143	0
+	"	1	0
 
 > ~/templates/partials/header.html
 	*	1642658460	0
