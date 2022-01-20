@@ -89,7 +89,36 @@
         </div>
     </div>
 {% endfor %}
+
 </div>
+        <form method='get'>
+
+            <div class='pagenator d-flex flex-row justify-content-center'>
+                {% if workshops.has_previous %}
+                <div class='page-item'>
+                    <h5><a href='?{{request.GET.urlencode}}&page={{workshops.previous_page_number}}'><i class="fas fa-angle-left"></i></a></h5>
+                </div>
+                {% endif %}
+
+                {% for num in workshops.paginator.page_range %}
+                {% if workshops.number == num %}
+                <div class='page-item'>
+                    <h5 class="current-page-item">{{ num }}</h5>
+                </div>
+                {% elif num > workshops.number|add:'-3' and num < workshops.number|add:'3' %}
+                <div class='page-item'>
+                    <h5><a href="?{{request.GET.urlencode}}&page={{ num }}">{{ num }}</a></h5>
+                </div>
+                {% endif %}
+                {% endfor %}
+
+                {% if workshops.has_next %}
+                <div class='page-item'>
+                    <h5><a href='?{{request.GET.urlencode}}&page={{workshops.next_page_number}}'><i class="fas fa-angle-right"></i></a></h5>
+                </div>
+                {% endif %}
+            </div>
+        </form>
 </div>
 {% endblock content %}
 
@@ -128,7 +157,6 @@ var positions = [
 
 
 
-
 for (var i = 0; i < positions.length; i ++) {
 
     var content = '<div class="customoverlay">' +
@@ -140,20 +168,37 @@ for (var i = 0; i < positions.length; i ++) {
 
     var marker = new kakao.maps.Marker({
         map: map, 
-        position: positions[i].latlng
+        position: positions[i].latlng,
+        clickable: true
         }); 
 
-    var customOverlay = new kakao.maps.CustomOverlay({
-        content: content,
-        position: positions[i].latlng,
-        yAnchor: 2.1
+    var iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+
+
+    var infowindow = new kakao.maps.InfoWindow({
+        content : content,
+        removable : iwRemoveable,
         });
 
+    // var customOverlay = new kakao.maps.CustomOverlay({
+    //    content: content,
+    //    position: positions[i].latlng,
+    //    yAnchor: 2.1
+    //    });
+    
 
     marker.setMap(map);
-    customOverlay.setMap(map);
-    
+    // customOverlay.setMap(map);
+
+
+    (function(marker, infowindow) {
+        // 마커에 mouseover 이벤트를 등록하고 마우스 오버 시 인포윈도우를 표시합니다 
+        kakao.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map, marker);
+        });
+    })(marker, infowindow);
 }
+
 
 $('.btn_map a').on('click', click);
 
