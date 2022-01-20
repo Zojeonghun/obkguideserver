@@ -11,11 +11,14 @@
 {% block content %}
 <div class='admin_page_container'>
     <div class='admin_page_btn'>
-    <a href='#'>의족FAQ</a>
+    <a href='{% url 'posts:posts-admin-list'%}'>의족FAQ</a>
     </div>
     <div class='admin_page_btn'>
     <a href='{% url 'feets:feets-admin-list'%}'>발</a>
     </div>
+    <div class='admin_page_btn'>
+        <a href='{% url 'knees:knees-admin-list'%}'>무릎</a>
+        </div>
     <div class='admin_page_btn'>
     <a href='{% url 'workshops:workshops-admin-list'%}'>대리점</a>
     </div>

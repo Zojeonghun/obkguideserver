@@ -1,0 +1,70 @@
+{% extends '../base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel='stylesheet' href='{% static 'css/knees/knees_list.css' %}'>
+{% endblock style %}
+
+{% block content %}
+<div class='container_box'>
+
+    <div class='page_title'>
+        <h1>나에게 맞는 제품은?</h1>
+    </div>
+    <div class='list_container d-flex flex-column'>
+        <div class='return'>
+            <a class='btn_reset' href='{% url 'knees:search' %}'><i class="fas fa-redo"></i> 다시하기</a>
+        </div>
+        {% for knee in knees %}
+            <div class='border_top'>
+                <div class='list_inner'>
+                    <div class='list_content d-flex flex-row justify-content-between'>
+
+                        <div class='img_text_container d-flex flex-row align-items-center'>
+                            <div class='list_img'>
+                                <a href="{% url 'knees:knee-detail' knee.pk %}"><img src="{{ knee.knee_image.url }}"></a>
+                            </div>
+                            <div class='list_text d-flex flex-column'>
+                                <div class='h1'>
+                                    <h1><a href="{% url 'knees:knee-detail' knee.pk %}">{{knee.name}}</a></h1>
+                                </div>
+                                <div class='h2'>
+                                    <h2 class='pc_knee_description'><a href="{% url 'knees:knee-detail' knee.pk %}">{{knee.description}}</a></h2>
+                                    <h2 class='mob_knee_description'><a href="{% url 'knees:knee-detail' knee.pk %}">{{knee.description|truncatechars:80}}</a></h2>
+                                </div>
+                                <div class='mob_date_container'>
+                                    <h4>활동 범위:{{knee.brand.get}}/
+                                        최대허용체중:{{knee.weight.get}}/
+                                        제품 분류:{{knee.rating.get}}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='date_container'>
+                            <div class='list_data_title'>
+                                <h4>활동 범위</h4>
+                                <h4>최대 허용 체중</h4>
+                                <h4>제품 분류</h4>
+                            </div>
+                            <div class='list_date_content'>
+                                <h4>: {{knee.brand.get}}</h4>
+                                <h4>: {{knee.weight.get}}</h4>
+                                <h4>: {{knee.rating.get}}</h4>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+
+{% endblock content %}
+
+{% block jquery %}
+
+{% endblock jquery %}
