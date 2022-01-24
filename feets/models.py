@@ -17,9 +17,6 @@ class AbstractItem(models.Model):
 class MobisGrade(AbstractItem):
     pass
 
-class Weight(AbstractItem):
-    pass
-
 class Activity(AbstractItem):
     pass
 
@@ -47,7 +44,7 @@ class Feet(models.Model):
     description = models.TextField(blank=True)
     feet_image = models.ImageField(upload_to='feets',blank=True)
     mobis_grade = models.ManyToManyField(MobisGrade, related_name="feets", blank=True)
-    weight = models.ManyToManyField(Weight, related_name="feets", blank=True)
+    weight = models.CharField(max_length=50, blank=True)
     activity = models.ManyToManyField(Activity, related_name='feets', blank=True)
     function = models.ManyToManyField(Function, related_name='feets', blank=True)
     age = models.ManyToManyField(Age, related_name='feets', blank=True)

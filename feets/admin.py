@@ -6,13 +6,6 @@ from . import models
 class CustomUserAdmin(admin.ModelAdmin):
     pass
 
-@admin.register(models.Weight)
-class CustomUserAdmin(admin.ModelAdmin):
-    pass
-
-@admin.register(models.Activity)
-class CustomUserAdmin(admin.ModelAdmin):
-    pass
 
 @admin.register(models.Function)
 class CustomUserAdmin(admin.ModelAdmin):
@@ -43,7 +36,6 @@ class CustomUserAdmin(admin.ModelAdmin):
     list_display = ("code", "name", 'pk', 'text_rating',)
     list_filter = (
         "mobis_grade",
-        "weight",
         "activity",
         'function',
         'age',
@@ -54,7 +46,6 @@ class CustomUserAdmin(admin.ModelAdmin):
         ) 
     filter_horizontal = (
         "mobis_grade",
-        "weight", 
         "activity", 
         'function', 
         'age', 
