@@ -1,4 +1,6 @@
 from django.db import models
+from django.db.models.fields.files import ImageField
+from django.db.models.fields.related import ManyToManyField
 
 # Create your models here.
 
@@ -50,6 +52,7 @@ class Knee(models.Model):
     brand = models.ManyToManyField(Brand, related_name='knees', blank=True)
     rating = models.ManyToManyField(Rating, related_name='knees', blank=True)
     waterproof = models.ManyToManyField(Waterproof, related_name='knees', blank=True)
+    iframe = models.TextField(blank=True)
 
     def __str__(self):
         return self.name

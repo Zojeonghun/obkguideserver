@@ -187,8 +187,8 @@
                                 <h2 class='mob_feet_description'><a href="{% url 'feets:feet-detail' feet.pk %}">{{feet.description|truncatechars:80}}</a></h2>
                             </div>
                             <div class='mob_date_container'>
-                                <h4>활동등급:{% for mg in feet.mobis_grade.all %}{{mg}}{% endfor %}/
-                                    최대허용체중:{{feet.weight.get}}/
+                                <h4>활동등급:{{feet.brand.get}}/
+                                    최대허용체중:{{feet.weight}}/
                                     등급:{{feet.rating.get}}
                             </div>
                         </div>
@@ -199,7 +199,7 @@
                             <td>활동 가능 범위</td><td> : </td><td>{{feet.brand.get}}</td>
                         </tr>
                         <tr>
-                            <td>최대 허용 체중</td><td> : </td><td>{{feet.weight.get}}</td>
+                            <td>최대 허용 체중</td><td> : </td><td>{{feet.weight}}</td>
                         </tr>
                         <tr>
                             <td>제품 분류</td><td> : </td><td>{{feet.rating.get}}</td>

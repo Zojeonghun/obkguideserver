@@ -187,8 +187,8 @@
                                 <h2 class='mob_knee_description'><a href="{% url 'knees:knee-detail' knee.pk %}">{{knee.description|truncatechars:80}}</a></h2>
                             </div>
                             <div class='mob_date_container'>
-                                <h4>활동등급:{% for mg in knee.mobis_grade.all %}{{mg}}{% endfor %}/
-                                    최대허용체중:{{knee.weight.get}}/
+                                <h4>활동등급:{{knee.brand.get}}/
+                                    최대허용체중:{{knee.weight}}/
                                     등급:{{knee.rating.get}}
                             </div>
                         </div>
@@ -199,7 +199,7 @@
                             <td>활동 가능 범위</td><td> : </td><td>{{knee.brand.get}}</td>
                         </tr>
                         <tr>
-                            <td>최대 허용 체중</td><td> : </td><td>{{knee.weight.get}}</td>
+                            <td>최대 허용 체중</td><td> : </td><td>{{knee.weight}}</td>
                         </tr>
                         <tr>
                             <td>제품 분류</td><td> : </td><td>{{knee.rating.get}}</td>
