@@ -8,33 +8,33 @@
 {% block content %}
 
 
-<div class='feet_container_1 d-flex' >
-    <div class='d-flex feet_container_inner_1'>
-            <div class='feet_inner_1'>
-                    <img class='feet_inner_img' src="{% static 'images/feets/feet_img(1).png' %}">
+<div class='knee_container_1 d-flex' >
+    <div class='d-flex knee_container_inner_1'>
+            <div class='knee_inner_1'>
+                    <img class='knee_inner_img' src="{% static 'images/knees/knee_img(1).png' %}">
             </div>
-            <div class='feet_text_1 feet_text'>
+            <div class='knee_text_1 knee_text'>
                     <h1>나에게 맞는 무릎은?</h1>
                     <h2>무엇보다 안정성이 중요한 무릎!<br>
                         처음 사용자를 위한 무릎 선택 가이드
                     </h2>
                     <div class='btn_guide_start'>
-                            <a href='{% url 'feets:search' %}'>시작하기</a>
+                            <a href='{% url 'knees:search' %}'>시작하기</a>
                     </div>
             </div>
     </div>
 </div>
 
-<div class='feet_container_2 d-flex flex-column'>
-<div class='feet_inner_2 translate-middle'>
+<div class='knee_container_2 d-flex flex-column'>
+<div class='knee_inner_2 translate-middle'>
 </div>
-<div class='feet_text_2 translate-middle feet_text'>
+<div class='knee_text_2 translate-middle knee_text'>
     <h1>내가 찾는 제품은?</h1>
     <h2>모든 모델을<br>
     둘러 보시겠습니까? <br>
     </h2>
     <div class='btn_guide_start'>
-        <a href='{% url 'feets:feets-list-all' %}'>시작하기</a>
+        <a href='{% url 'knees:knees-list-all' %}'>시작하기</a>
     </div>
 </div>
 </div>
@@ -49,7 +49,7 @@
 {% block jquery %}
 
 $(document).ready(function() {
-$('.feet_inner_img').fadeIn(2000);
+$('.knee_inner_img').fadeIn(2000);
 });
 
 

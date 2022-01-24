@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views.generic import ListView, UpdateView, DeleteView, CreateView
 from . import models, forms
 from django.urls import reverse
+from django.core.paginator import Paginator
 
 class WorkshopListView(ListView):
     model = models.Workshop
@@ -28,14 +29,21 @@ def search(request):
         if address_text is not None:
             
             filter_args['address_text__contains']= address_text
+        qs = models.Workshop.objects.filter(**filter_args).order_by('?')
 
-        workshops = models.Workshop.objects.filter(**filter_args).order_by('?')
+        paginator = Paginator(qs, 5)
+
+        page = request.GET.get("page", 1)
+        
+
+        workshops = paginator.get_page(page)
+        return render(request, "workshops/workshop_list.html", {"form": form, 'workshops':workshops })
 
     else:
         form = forms.SearchForm()
-        return render(request, "workshops/workshop_list.html", {"form": form})
+        
 
-    return render(request, "workshops/workshop_list.html", {"form": form, "workshops": workshops})
+    return render(request, "workshops/workshop_list.html", {"form": form})
 
 class WorkshopAdminDeleteView(DeleteView):
     model = models.Workshop

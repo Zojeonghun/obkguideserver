@@ -1,0 +1,46 @@
+
+
+input {
+    width: 500px;
+}
+
+.add_btn {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.workshop_btn {
+    margin-right: 50px;
+}
+
+
+
+textarea {
+    width: 500px;
+}
+
+select {
+    width: 300px;
+}
+
+form {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.admin_knee_list_container div{
+    text-align: center;
+}
+
+
+.admin_feet_list_container div{
+    text-align: center;
+}
+
+.admin_prodlist_title {
+    text-align: center;
+    font-size: 30px;
+}
+

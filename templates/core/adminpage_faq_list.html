@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel='stylesheet' href='{% static 'css/core/adminpage_prod.css' %}'>
+{% endblock style %}
+
+
+
+
+{% block content %}
+<div class='admin_feet_list_container container'>
+    <div class='add_btn'>
+    <a href='{% url 'posts:post-admin-create' %}'>[추가]</a>
+    </div>
+{% for post in posts %}
+    <div>
+    <span>[{{post.category.get}}]</span><a class='post_btn'href='{% url 'posts:post-admin-update' post.pk %}'>{{ post.title }}</a><a href='{%url 'posts:post-admin-delete' post.pk %}'>[삭제]</a>
+    </div>
+{% endfor %}
+</div>
+
+{% endblock content %}

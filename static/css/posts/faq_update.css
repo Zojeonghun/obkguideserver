@@ -13,3 +13,9 @@ h1 {
 .submit_btn {
     margin-top: 20px;
 }
+
+form {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -137,6 +137,21 @@ td:nth-child(5) {
     margin-top: 30px;
 }
 
+.pagenator {
+    margin: 50px auto;
+}
+
+.current-page-item {
+    font-weight: bold;
+    border-bottom: silver 2px solid;
+}
+
+.page-item {
+    width: 40px;
+    text-align: center;
+}
+
+
 @media (min-width:1440px) {
     .workshop_container {
         width: 1440px;

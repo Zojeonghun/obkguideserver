@@ -24,6 +24,7 @@ class FeetAdminForm(forms.ModelForm):
             'code',
             'name',
             'description',
+            'feet_image',
             'mobis_grade',
             'weight',
             'activity',

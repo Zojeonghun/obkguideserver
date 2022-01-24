@@ -34,7 +34,7 @@
             </form>
         </div>
     </div>
-    <a href='{% url 'posts:post-create' %}'>[추가하기]</a>
+
     <div class='post_container'>
         
         {% for post in posts  %}
@@ -55,8 +55,7 @@
                         <div class="card card-body">
                             <h3>
                         A. {{post.description|linebreaksbr}}
-                        <a href='{% url 'posts:post-update' post.id %}'>[수정하기]</a>
-                        <a href='{% url 'posts:post-delete' post.id %}'>[삭제하기]</a>
+
                             </h3>
                         </div>
                     </div>
