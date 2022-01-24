@@ -19,7 +19,9 @@
     <div class='d-flex flex-column detail_container'>
         <div class='dedatil_container_inner'>
             <div class='img_container'>
+                {% if feet.feet_image %}
                 <img class='feet_img' src='{{ feet.feet_image.url }}'>
+                {% endif %}
             </div>
             <div class='data_container'>
                 <div class='data_name_desc'>
@@ -41,7 +43,7 @@
                     <div class='data_content'>
                         <h4>: {{ feet.code }}</h4>
                         <h4>: {{ feet.brand.get }}</h4>
-                        <h4>: {{feet.weight}}</h4>
+                        <h4>: {{ feet.weight }}</h4>
                         <h4>: {{feet.rating.get}}</h4>
                     </div>
                 </div>

@@ -19,7 +19,9 @@
 
         <div class='dedatil_container_inner'>
             <div class='img_container'>
+                {% if knee.knee_image %}
                 <img class='knee_img' src='{{ knee.knee_image.url }}'>
+                {% endif %}
             </div>
             <div class='data_container'>
                 <div class='data_name_desc'>

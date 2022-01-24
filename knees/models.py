@@ -42,7 +42,7 @@ class Knee(models.Model):
     code = models.CharField(max_length=50)
     name = models.CharField(max_length=50, blank=True)
     description = models.TextField(blank=True)
-    knee_image = models.ImageField(upload_to='knees',blank=True)
+    knee_image = models.ImageField(upload_to='knees',blank=True, null=True)
     mobis_grade = models.ManyToManyField(MobisGrade, related_name="knees", blank=True)
     weight = models.CharField(max_length=50, blank=True)
     activity = models.ManyToManyField(Activity, related_name='knees', blank=True)
