@@ -93,13 +93,19 @@ h2 {
 
 .start_btn {
     font-size: 20px;
-    color: #053282;
-    border: #053282 1px solid;
+    color: white;
+    border: #5Fa0AF 1px solid;
+    background-color: #5FA0AF;
     border-radius: 5px;
     padding: 0 8px;
 }
 .start_btn_box {
     margin-top: 20px;
+}
+
+.start_btn:hover {
+    color: #5FA0AF;
+    background-color: rgb(0,0,0,0);
 }
 
 

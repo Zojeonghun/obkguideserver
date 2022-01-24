@@ -1,5 +1,6 @@
 {% extends '../base.html' %}
 {% load static %}
+{% load widget_tweaks %}
 
 {% block style %}
 <link rel='stylesheet' href='{% static 'css/feet_detail.css' %}'>
@@ -14,10 +15,13 @@
     <div class='back_btn'>
         <a onclick='goBack()'><i class="fas fa-arrow-left"></i> 뒤로가기</a>
     </div>
+
     <div class='d-flex flex-column detail_container'>
         <div class='dedatil_container_inner'>
             <div class='img_container'>
+                {% if feet.feet_image %}
                 <img class='feet_img' src='{{ feet.feet_image.url }}'>
+                {% endif %}
             </div>
             <div class='data_container'>
                 <div class='data_name_desc'>
@@ -39,13 +43,16 @@
                     <div class='data_content'>
                         <h4>: {{ feet.code }}</h4>
                         <h4>: {{ feet.brand.get }}</h4>
-                        <h4>: {{feet.weight.get}}</h4>
+                        <h4>: {{ feet.weight }}</h4>
                         <h4>: {{feet.rating.get}}</h4>
                     </div>
                 </div>
             </div>
         </div>
-
+    <div class='youtube'>
+    {{feet.iframe|safe}}
     </div>
+    </div>
+
 </div>
 {% endblock content %}
