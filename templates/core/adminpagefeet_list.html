@@ -11,7 +11,9 @@
 {% block content %}
 
 <div class='admin_prodlist_title'><strong>발 리스트</strong></div>
-
+<div class='add_btn'>
+    <a href='{% url 'feets:feet-admin-create' %}'>[추가]</a>
+</div>
 <div class='admin_feet_list_container'>
 {% for feet in feets %}
     <div>

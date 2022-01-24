@@ -15,4 +15,5 @@ urlpatterns = [
     path('feets_admin_list/', views.FeetAdminListView.as_view(), name='feets-admin-list'),
     path('feets_admin_list/<int:pk>/', views.FeetAdminUpdateView.as_view(), name='feet-admin-update'),
     path('<int:pk>/delete/',views.FeetDeleteView.as_view(),name="feet-admin-delete",),
+    path('add/', views.FeetAdminCreateView.as_view(), name='feet-admin-create'),
 ]
