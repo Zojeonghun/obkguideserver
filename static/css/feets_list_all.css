@@ -38,6 +38,19 @@ h6 {
     font-size: 25px;
 }
 
+#btn_reset {
+    color: white;
+    background-color: #91ad41;
+    padding: 4px 4px;
+    border: #91ad41 1px solid;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.return {
+    margin-bottom: 5px;
+}
+
 
 .text_input {
     text-align: end;

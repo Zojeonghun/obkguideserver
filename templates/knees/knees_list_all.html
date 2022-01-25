@@ -17,6 +17,9 @@
 
     <form id='filter_form' method='get'>
         <div class='filter_form_container'>
+            <div class='return'>
+                <a class='btn_reset' href='{% url 'knees:knees-list-all' %}'><i class="fas fa-redo"></i> 전체보기</a>
+            </div>
                 <div class='filter_form_container_inner'>
             
             
@@ -144,6 +147,9 @@
         </div>
         
         <div class='mob_filter_form_container'>
+            <div class='return'>
+                <a class='btn_reset' href='{% url 'knees:knees-list-all' %}'><i class="fas fa-redo"></i> 전체보기</a>
+            </div>
             <div class='mob_category_title'>
 
                     <div class='d-flex flex-row justify-content-between'>
@@ -318,7 +324,6 @@
                 'background-color':'#053282',
                 'color':'#ffffff',
             })
-            $(mobTargetId + '_noncolor').val(localStorage.getItem(localStorage.key(i)))
     
     }});
 
@@ -350,21 +355,9 @@
         }
     })
 
-    $('#customRange').change(function(){
-        localStorage.setItem(event.currentTarget.id, event.currentTarget.value)
-
-        $('#filter_form').submit()
+    $('.btn_reset').click(function(){
+        localStorage.clear();
     })
-
-    $('#mob_customRange_noncolor').change(function(){
-        var mobRangeValue = $(this).val()
-        $('#customRange').val(mobRangeValue)
-        localStorage.setItem('customRange', event.currentTarget.value)
-        
-        $('#filter_form').submit()
-    })
-
-
 
 
 {% endblock jquery %}
