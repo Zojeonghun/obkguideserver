@@ -39,7 +39,7 @@ h6 {
     font-size: 25px;
 }
 
-#btn_reset {
+.btn_reset {
     color: white;
     background-color: #91ad41;
     padding: 4px 4px;
