@@ -47,6 +47,12 @@ h6 {
     font-size: 13px;
 }
 
+.btn_reset:hover {
+    color: #91ad41;
+    background-color: white;
+}
+
+
 .return {
     margin-bottom: 5px;
 }
