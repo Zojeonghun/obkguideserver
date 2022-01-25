@@ -17,6 +17,18 @@ h3 {
     margin-bottom: 0;
 }
 
+.mg_icon {
+    font-size: 20px;
+    padding: 5px 5px;
+    margin-bottom: 0;
+}
+
+.mob_mg_icon {
+    font-size: 17px;
+    padding: 3px 3px;
+    margin-bottom: 0;
+}
+
 h4 {
     color: #053282;
     font-size: 15px;
@@ -75,6 +87,12 @@ input[type=checkbox] {
 }  
 
 input[type=checkbox]:checked + label h3 {
+    color: white;
+    background-color: #053282;
+    border-radius: 10px;
+}
+
+input[type=checkbox]:checked + label i {
     color: white;
     background-color: #053282;
     border-radius: 10px;

@@ -140,6 +140,7 @@ h4 {
 
     .content_container {
         position: inherit;
+        height: 450px;
     }
 
     .show_btn {
