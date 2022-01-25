@@ -1,0 +1,214 @@
+.header_nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header_bar {
+    height: 60px;
+}
+
+.header_inner {
+    padding: 0px 100px;
+    height: 100%;
+}
+
+.logo {
+    width: 130px;
+    border: white 2px solid;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.image_text {
+    color: white;
+    border:#5FA0AF 3px solid;
+    width: 90%;
+    height: 90%;
+}
+
+.image_button {
+    bottom: 80px;
+    left: 120px;
+}
+
+.image_button button {
+    margin-bottom: 50px;
+    margin-left: 60px;
+    padding: 20px 70px;
+    border: none;
+    opacity: 70%;
+}
+
+.image_button button:hover {
+    opacity: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.image_border {
+    border: 1px solid black;
+}
+
+.image_inner_text {
+    margin-left: 60px;
+    margin-top: 80px;
+}
+
+.header_nav_icon i {
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+
+a:hover {
+    color:inherit
+}
+
+
+header {
+    position: relative;
+}
+
+.header_btn_container {
+    position: relative;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+.header_btn_container a{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    width: 100%;
+}
+
+
+
+
+.guide_drop_menu a{
+    padding-bottom: 10px;
+}
+
+.guide_drop_menu_display {
+    display: none;
+    background-color: white;
+    position: absolute;
+    z-index: 1050;
+    transform:translateX(-50%);
+    top: 40px;
+    left: 50%;
+    width: 100px;
+    text-align: center;
+}
+
+.btn_header:hover {
+    border-bottom: #053282 solid 1.5px;
+}
+.btn_header {
+    border-bottom: white 1.5px solid;
+}
+
+body {
+    font-family: 'Gowun Batang', serif;
+}
+header {
+    font-family: 'Nanum Gothic', sans-serif;;
+}
+
+.mob_menu_container div button{
+    width: 100%;
+    color: #053282;
+    background-color: inherit;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    font-size: 17px;
+    text-align: left;
+    border: inherit;
+}
+
+.mob_menu_container {
+    width: 100%;
+}
+
+.mob_menu_logo_container {
+    text-align: left;
+}
+
+.mob_menu_logo {
+    width: 130px;
+    margin-bottom: 40px;
+    margin-left: 16px;
+}
+
+.fa-search {
+    color: #053282;
+}
+
+.mob_menu_dropdown {
+    font-size: 15px;
+}
+
+
+
+@media ( max-width: 900px) {
+    .header_bar {
+        display: none;
+    }
+
+
+    
+    .dropdown-menu {
+        width: 200px;
+        text-align: center;
+        margin-left: 16px;
+    }
+    .mob_header_nav_icon {
+        font-size: 20px;
+    }
+
+    .mob_logo {
+        width: 100px;
+    }
+
+    .mob_header_bar {
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+    }
+
+
+
+}
+
+
+
+
+@media ( min-width: 900px) {
+    .mob_header_bar {
+        display: none;
+    }
+}
+
+
+@media (min-width:1440px) {
+    .header_bar {
+        width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    
+}

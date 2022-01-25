@@ -176,7 +176,7 @@
 
                     <div class='img_text_container d-flex flex-row align-items-center'>
                         <div class='list_img'>
-                            <a href="{% url 'knees:knee-detail' knee.pk %}">{% if knee_image.image %}<img src="{{ knee.knee_image.url }}">{% endif %}</a>
+                            <a href="{% url 'knees:knee-detail' knee.pk %}">{% if knee.knee_image %}<img src="{{ knee.knee_image.url }}">{% endif %}</a>
                         </div>
                         <div class='list_text d-flex flex-column'>
                             <div class='h1'>

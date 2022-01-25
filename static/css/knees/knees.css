@@ -1,0 +1,163 @@
+.knee_container_1 {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(241, 245, 248);
+    align-items: center;
+}
+
+.knee_container_inner_1 {
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    flex-direction: row;
+}
+
+.knee_text_1 h1{
+    font-size: 35px;
+    text-align: center;
+}
+
+.knee_text_1 h2{
+    font-size: 30px;
+    text-align: center;
+}
+.knee_text_1 h3{
+    font-size: 25px;
+    text-align: center;
+}
+
+.knee_inner_img {
+    height: 400px;
+    display: none;
+}
+
+
+
+
+.knee_container_2 {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+}
+
+.knee_inner_2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.knee_2 {
+    margin: 0 auto;
+}
+
+.knee_text_2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+}
+
+.knee_text_2 h1{
+    font-size: 35px;
+    text-align: center;
+}
+
+.knee_text_2 h2{
+    font-size: 30px;
+    text-align: center;
+}
+.knee_text_2 h3{
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.btn_guide_start {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn_guide_start a {
+    font-size: 13px;
+    color: #053282;
+    border: #053282 solid 1px;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+.btn_guide_start a:hover {
+    color: white;
+    background-color: #053282;
+}
+
+
+@media (min-width:1440px) {
+    .knee_container_inner_1 {
+        width: 1440px;
+    }
+    .knee_container_1 {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width:1280px) {
+    .knee_text h1{
+        font-size: 25px;
+    }
+    .knee_text h2 {
+        font-size: 20px;
+    }
+
+    .knee_inner_1 {
+        left: 80%;
+    }
+    .knee_inner_img {
+        height: 300px;
+    }
+}
+
+@media (max-width:970px) {
+    .knee_container_inner_1 {
+        flex-direction: column;
+        align-content: space-between;
+        height: 100%;
+    }
+
+    .knee_text_1 {
+        width: 323px;
+    }
+}
+
+
+
+@media (max-width:460px) {
+    .knee_text h1{
+        font-size: 17px;
+    }
+    .knee_text h2 {
+        font-size: 13px;
+    }
+    .knee_inner_img {
+        height: 200px;
+    }
+    .knee_container_1 {
+        height: 450px;
+    }
+    .knee_container_2 {
+        height: 300px;
+    }
+}
+

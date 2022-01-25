@@ -1,0 +1,184 @@
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+h3 {
+    font-size: 25px;
+    color: #053282;
+}
+
+h4 {
+    font-size: 17px;
+}
+
+.detail_title {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.detail_title h1 {
+    font-size: 30px;
+}
+
+.detail_container_total {
+    width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.img_container {
+    width: 500px;
+    height: 500px;
+    border: silver 1px solid;
+}
+
+.back_btn {
+    margin-bottom: 10px;
+}
+
+.knee_img {
+    height: 100%;
+}
+
+.detail_container {
+    border: 1px silver solid;
+}
+
+.dedatil_container_inner {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.data_name_desc {
+    height: 230px;
+}
+
+.data_container_inner {
+    border-top: 1px silver solid;
+    padding-top: 10px;
+}
+
+.data_container {
+    margin: 20px 10px 0px 20px;
+}
+
+.data_name {
+    margin-bottom: 30px;
+}
+
+.data_content {
+    margin-left: 20px;
+}
+
+
+.detail_description {
+    line-height: 170%;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.youtube {
+    height: 350px;
+    margin-top: 30px;
+}
+
+@media (max-width:1440px) {
+    .knee_img {
+        width: 290px;
+        height: 290px;
+    }
+    .img_container {
+        width: 300px;
+        height: 300px;
+    }
+    .detail_container_total {
+        width: 890px;
+    }
+
+    .data_name_desc {
+        height: 200px;
+    }
+    .data_container {
+        margin-top: 0px;
+    }
+
+    .data_container_inner {
+        height: 100px;
+    }
+    h4 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:900px) {
+    .dedatil_container_inner {
+        flex-direction: column;
+    }
+
+    .knee_img {
+        width: 498px;
+        height: 498px;
+    }
+    .img_container {
+        width: 500px;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .data_name_desc {
+        height: 200px;
+    }
+
+    .detail_container_total {
+        width: 600px;
+    }
+
+    .data_container {
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width:630px) {
+.detail_container_total {
+    width: 97%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.img_container {
+    width: 100%;
+    height: auto;
+}
+.knee_img {
+    width: 100%;
+    height: auto;
+}
+
+.data_container {
+    height: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.data_name_desc {
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.dedatil_container_inner {
+    height: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding-top: 20px;
+}
+
+.detail_title h1 {
+    font-size: 20px;
+}
+
+}

@@ -1,0 +1,51 @@
+.home_image_container{
+    width: 100%;
+    position: relative;
+}
+
+.home_image_container img{
+    display: block;
+    width: 100%;
+}
+
+.home_title_container h1{
+    font-size: 17px;
+    text-align: center;
+}
+
+.home_title_container h2{
+    font-size: 13px;
+    text-align: center;
+}
+
+.home_title_container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.home_image_container_2 {
+    width: 100%;
+    position: relative;
+}
+
+.home_image_container_2 img{
+    display: block;
+    width: 100%;
+}
+
+.home_title_container_2 h1{
+    font-size: 17px;
+    text-align: center;
+}
+
+.home_title_container_2 h2{
+    font-size: 13px;
+    text-align: center;
+}
+
+.home_title_container_2 {
+    position: absolute;
+    left: 60%;
+    top: 50%;
+}

@@ -1,0 +1,207 @@
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+h1 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 18px;
+    color: white;
+    border: 1px #053282 solid;
+    background-color: #053282;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+h4:hover {
+    border: 1px #053282 solid;
+    color: #053282;
+    background-color: white;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    color: #053282;
+}
+
+.map_icon {
+    display: none;
+}
+
+.customoverlay {
+    background-color: white;
+    width: 200px;
+    padding-left: 10px;
+    border: silver 1px solid;
+}
+
+.customoverlay div {
+    font-size: 11px;
+}
+
+.workshop_title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.search_form {
+    margin-bottom: 50px;
+}
+.search_name input{
+    width: 400px;
+    height: 30px;
+}
+
+.search_name {
+    position: relative;
+}
+.search_submit_btn {
+    border: none;
+    background-color: inherit;
+    position: absolute;
+    right: 10px;
+}
+
+.search_location select {
+    height: 30px;
+    margin-right: 10px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td:nth-child(1) {
+    width: 200px;
+    padding-left: 30px;
+}
+
+td:nth-child(2) {
+    width: 400px;
+    text-align: start;
+}
+
+td:nth-child(3) {
+    width: 150px;
+}
+
+td:nth-child(4) {
+    width: 85px;
+    text-align: center;
+}
+td:nth-child(5) {
+    width: 85px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+
+.workshop_list_container {
+    border-top: silver 1px solid;
+    height: 50px;
+}
+
+.workshop_table {
+    margin-top: 30px;
+}
+
+.mob_workshop_container {
+    display: none;
+}
+
+.map_icon {
+    font-size: 18px;
+}
+
+.mob_workshop_list_container {
+    border-bottom: silver 1px solid;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 30px;
+}
+
+.mob_workshop_container {
+    margin-top: 30px;
+}
+
+.pagenator {
+    margin: 50px auto;
+}
+
+.current-page-item {
+    font-weight: bold;
+    border-bottom: silver 2px solid;
+}
+
+.page-item {
+    width: 40px;
+    text-align: center;
+}
+
+
+@media (min-width:1440px) {
+    .workshop_container {
+        width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+}
+
+@media (max-width:900px) {
+    .map_icon {
+        display: block;
+    }
+
+    .mob_workshop_list_container {
+        display: block;
+    }
+    
+    .workshop_table {
+        display: none;
+    }
+
+    .mob_workshop_container {
+        display: block;
+    }
+    
+}
+
+@media (max-width:500px) {
+    .search_name input {
+        width: 220px;
+    }
+
+    .mob_workshop_list_container {
+        padding: 5px 10px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+
+    h6 {
+        font-size: 14px;
+    }
+    .mob_workshop_address {
+        width: 280px;
+    }
+}
