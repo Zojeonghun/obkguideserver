@@ -33,4 +33,6 @@ class KneeAdminForm(forms.ModelForm):
             'rating',
             'waterproof',
             'brand',
+            'hope',
+            'iframe',
         ]

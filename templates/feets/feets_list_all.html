@@ -25,7 +25,7 @@
             
                     <div class='d-flex flex-row'>
                         <div class='category_title'>
-                            <div class='label_btn'>
+                            <div class='label_btn2'>
                                 <h3>제품 기능</h3>
                             </div>
                             <div class='label_btn'>
@@ -63,6 +63,25 @@
                                 <div class='label_btn'>
                                     <input type='checkbox' name='function' value='8' id='function_4'>
                                     <label class='form-check-label' for='function_4'><h3>낮은발</h3></label>
+                                </div>
+                                <div class='label_btn'>
+                                    <input type='checkbox' name='function' value='9' id='function_5'>
+                                    <label class='form-check-label' for='function_5'><h3>하모니</h3></label>
+                                </div>
+                            </div>
+
+                            <div class='d-flex flex-row form_category_value'>
+                                <div class='label_btn'>
+                                    <input type='checkbox' name='function' value='17' id='function_6'>
+                                    <label class='form-check-label' for='function_6'><h3>굽조절</h3></label>
+                                </div>
+                                <div class='label_btn'>
+                                    <input type='checkbox' name='function' value='18' id='function_7'>
+                                    <label class='form-check-label' for='function_7'><h3>소아용</h3></label>
+                                </div>
+                                <div class='label_btn'>
+                                    <input type='checkbox' name='function' value='19' id='function_8'>
+                                    <label class='form-check-label' for='function_8'><h3>스포츠용</h3></label>
                                 </div>
                             </div>
 
@@ -122,7 +141,7 @@
 
 
                     <div class="card card-body">
-                        <div class='d-flex align-items-center'>
+                        <div class='d-flex align-items-center mob_function_label_container'>
 
                                 <label class='mob_label_btn' id='mob_function_1' for='function_1'>방수</label>
                                 <label class='mob_label_btn' id='mob_function_2' for='function_2'>사이드플렉스</label>
@@ -134,6 +153,13 @@
                                     <i class="fas fa-exclamation-circle"></i>
                                 </a>
                                 <label class='mob_label_btn' id='mob_function_4' for='function_4'>낮은발</label>
+                                <label class='mob_label_btn' id='mob_function_5' for='function_5'>하모니</label>
+                            </div>
+                            
+                            <div class='d-flex align-items-center'>
+                                <label class='mob_label_btn' id='mob_function_6' for='function_6'>굽조절</label>
+                                <label class='mob_label_btn' id='mob_function_7' for='function_7'>소아용</label>
+                                <label class='mob_label_btn' id='mob_function_8' for='function_8'>스포츠용</label>
                             
                         </div>
                     </div>
@@ -189,7 +215,7 @@
 
                     <div class='img_text_container d-flex flex-row align-items-center'>
                         <div class='list_img'>
-                            <a href="{% url 'feets:feet-detail' feet.pk %}"><img src="{{ feet.feet_image.url }}"></a>
+                            <a href="{% url 'feets:feet-detail' feet.pk %}">{% if feet.feet_image %}<img src="{{ feet.feet_image.url }}">{% endif %}</a>
                         </div>
                         <div class='list_text d-flex flex-column'>
                             <div class='h1'>

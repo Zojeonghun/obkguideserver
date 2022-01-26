@@ -33,4 +33,6 @@ class FeetAdminForm(forms.ModelForm):
             'rating',
             'waterproof',
             'brand',
+            'hope',
+            'iframe',
         ]
