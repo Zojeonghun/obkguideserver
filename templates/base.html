@@ -116,7 +116,7 @@ function mouseLeave(event) {
 }
 
 function goBack(){
-    window.history.back();
+    window.history.back(); return false;
 }
 
 var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
