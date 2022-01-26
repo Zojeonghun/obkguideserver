@@ -32,6 +32,20 @@ h4 {
     border: silver 1px solid;
 }
 
+.back_btn a{
+    color: white;
+    background-color: #91ad41;
+    padding: 3px 5px;
+    border: 1px #91ad41 solid;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.back_btn a:hover {
+    color: #91ad41;
+    background-color: white;
+}
+
 .back_btn {
     margin-bottom: 10px;
 }
