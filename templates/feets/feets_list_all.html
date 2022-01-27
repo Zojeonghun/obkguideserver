@@ -224,9 +224,9 @@
                                 <h2 class='mob_feet_description'><a href="{% url 'feets:feet-detail' feet.pk %}">{{feet.description|truncatechars:80}}</a></h2>
                             </div>
                             <div class='mob_date_container'>
-                                <h4>활동등급:{{feet.brand.get}}/
+                                <h4>활동가능범위:{{feet.brand.get}}/
                                     최대허용체중:{{feet.weight}}/
-                                    등급:{{feet.rating.get}}
+                                    방수:{{feet.waterproof.get}}/...
                             </div>
                         </div>
                     </div>
@@ -239,7 +239,16 @@
                             <td>최대 허용 체중</td><td> : </td><td>{{feet.weight}}</td>
                         </tr>
                         <tr>
+                            <td>방수</td><td> : </td><td>{{feet.waterproof.get}}</td>
+                        </tr>
+                        <tr>
                             <td>제품 분류</td><td> : </td><td>{{feet.rating.get}}</td>
+                        </tr>
+                        <tr>
+                            <td>제품 무게</td><td> : </td><td>{{feet.mass}}</td>
+                        </tr>
+                        <tr>
+                            <td>제품 높이</td><td> : </td><td>{{feet.height}}</td>
                         </tr>
                     </table>
 

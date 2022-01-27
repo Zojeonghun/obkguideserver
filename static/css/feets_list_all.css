@@ -38,6 +38,11 @@ h6 {
     font-size: 25px;
 }
 
+td {
+    color:#053282;
+    font-size: 14px;
+}
+
 .btn_reset {
     color: white;
     background-color: #91ad41;
@@ -336,8 +341,7 @@ input[type=checkbox]:checked + label i {
     .date_container {
         width: 200px;
     }
-    h4 {
-        color: #053282;
+    td {
         font-size: 12px;
     }
 }
