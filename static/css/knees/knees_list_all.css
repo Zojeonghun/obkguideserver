@@ -322,24 +322,9 @@ input[type=checkbox]:checked + label i {
     
 }
 
-@media (max-width:830px) {
-    .list_img img{
-        width: 150px;
-    }
-    .list_text {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .date_container {
-        width: 200px;
-    }
-    h4 {
-        color: #053282;
-        font-size: 12px;
-    }
-}
 
-@media (max-width:720px) {
+
+@media (max-width:790px) {
 
     .date_container {
         display: none;

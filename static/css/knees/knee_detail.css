@@ -99,6 +99,10 @@ iframe {
     margin-top: 30px;
 }
 
+.date_margin_letf {
+    margin-left: 40px;
+}
+
 @media (max-width:1440px) {
     .knee_img {
         width: 290px;

@@ -53,6 +53,7 @@ class Feet(models.Model):
     rating = models.ManyToManyField(Rating, related_name='feets', blank=True)
     waterproof = models.ManyToManyField(Waterproof, related_name='feets', blank=True)
     iframe = models.TextField(blank=True)
+    mass = models.CharField(max_length=50, blank=True)
 
     def __str__(self):
         return self.name
