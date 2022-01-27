@@ -108,6 +108,33 @@ h2 {
     background-color: rgb(0,0,0,0);
 }
 
+.start_content {
+    display: none;
+    flex-direction: column;
+    color: white;
+    
+}
+
+.start_content span{
+    border: #5Fa0AF 1px solid;
+    margin-top: 10px;
+    background-color: #5Fa0AF;
+    border-radius: 5px;
+}
+
+.start_content2 {
+    display: none;
+    flex-direction: column;
+    color: white;
+}
+
+.start_content2 span{
+    border: #5Fa0AF 1px solid;
+    margin-top: 10px;
+    background-color: #5Fa0AF;
+    border-radius: 5px;
+}
+
 
 
 
