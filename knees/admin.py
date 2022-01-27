@@ -37,7 +37,7 @@ class CustomUserAdmin(admin.ModelAdmin):
 
 @admin.register(models.Knee)
 class CustomUserAdmin(admin.ModelAdmin):
-    list_display = ("code", "name", 'pk',)
+    list_display = ("code", "name", 'pk', 'height', 'mass',)
     list_filter = (
             "mobis_grade",
             "activity",
