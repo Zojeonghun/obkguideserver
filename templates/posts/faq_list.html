@@ -54,8 +54,9 @@
                     <div class="collapse multi-collapse" id="multiCollapseExample{{post.id}}">
                         <div class="card card-body">
                             <h3>
+                            {% autoescape off %}
                         A. {{post.description|linebreaksbr|urlize}}
-
+                            {% endautoescape %}
                             </h3>
                         </div>
                     </div>
