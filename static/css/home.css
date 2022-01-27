@@ -139,6 +139,11 @@ h2 {
     z-index: 1300;
 }
 
+.mob_menu_icon_container {
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
 @media (min-width:1440px) {
     .home_container_inner_1 {
         width: 1440px;
