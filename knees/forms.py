@@ -35,4 +35,6 @@ class KneeAdminForm(forms.ModelForm):
             'brand',
             'hope',
             'iframe',
+            'mass',
+            'height',
         ]

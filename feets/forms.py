@@ -35,4 +35,6 @@ class FeetAdminForm(forms.ModelForm):
             'brand',
             'hope',
             'iframe',
+            'mass',
+            'height',
         ]
