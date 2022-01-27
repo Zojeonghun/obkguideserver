@@ -136,12 +136,12 @@ h2 {
 }
 
 .start_content span:hover {
-    background-color: white;
+    background-color: rgb(0,0,0,0);
     color: #5Fa0AF;
 }
 
 .start_content2 span:hover {
-    background-color: white;
+    background-color: rgb(0,0,0,0);
     color: #5Fa0AF;
 }
 
