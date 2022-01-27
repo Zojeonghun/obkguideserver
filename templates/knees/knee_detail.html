@@ -1,7 +1,7 @@
 {% extends '../base.html' %}
 {% load static %}
 {% load widget_tweaks %}
-
+{% block page_title %}{{knee.name}}{% endblock page_title %}
 {% block style %}
 <link rel='stylesheet' href='{% static 'css/knees/knee_detail.css' %}'>
 {% endblock style %}
