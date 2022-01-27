@@ -54,6 +54,7 @@ class Feet(models.Model):
     waterproof = models.ManyToManyField(Waterproof, related_name='feets', blank=True)
     iframe = models.TextField(blank=True)
     mass = models.CharField(max_length=50, blank=True)
+    height = models.CharField(max_length=50, blank=True)
 
     def __str__(self):
         return self.name
