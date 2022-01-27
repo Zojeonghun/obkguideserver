@@ -135,6 +135,16 @@ h2 {
     border-radius: 5px;
 }
 
+.start_content span:hover {
+    background-color: white;
+    color: #5Fa0AF;
+}
+
+.start_content2 span:hover {
+    background-color: white;
+    color: #5Fa0AF;
+}
+
 
 
 
