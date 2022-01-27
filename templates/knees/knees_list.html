@@ -33,25 +33,33 @@
                                     <h2 class='mob_knee_description'><a href="{% url 'knees:knee-detail' knee.pk %}">{{knee.description|truncatechars:80}}</a></h2>
                                 </div>
                                 <div class='mob_date_container'>
-                                    <h4>활동 범위:{{knee.brand.get}}/
-                                        최대허용체중:{{knee.weight.get}}/
-                                        제품 분류:{{knee.rating.get}}
+                                    <h4>활동가능범위:{{knee.brand.get}}/
+                                        최대허용체중:{{knee.weight}}/
+                                        방수:{{knee.waterproof.get}}/...</h4>
                                 </div>
                             </div>
                         </div>
 
-                        <div class='date_container'>
-                            <div class='list_data_title'>
-                                <h4>활동 범위</h4>
-                                <h4>최대 허용 체중</h4>
-                                <h4>제품 분류</h4>
-                            </div>
-                            <div class='list_date_content'>
-                                <h4>: {{knee.brand.get}}</h4>
-                                <h4>: {{knee.weight.get}}</h4>
-                                <h4>: {{knee.rating.get}}</h4>
-                            </div>
-                        </div>
+                        <table class='date_container'>
+                            <tr>
+                                <td>활동 가능 범위</td><td> : </td><td>{{knee.brand.get}}</td>
+                            </tr>
+                            <tr>
+                                <td>최대 허용 체중</td><td> : </td><td>{{knee.weight}}</td>
+                            </tr>
+                            <tr>
+                                <td>방수</td><td> : </td><td>{{knee.waterproof.get}}</td>
+                            </tr>
+                            <tr>
+                                <td>제품 분류</td><td> : </td><td>{{knee.rating.get}}</td>
+                            </tr>
+                            <tr>
+                                <td>제품 무게</td><td> : </td><td>{{knee.mass}}</td>
+                            </tr>
+                            <tr>
+                                <td>제품 높이</td><td> : </td><td>{{knee.height}}</td>
+                            </tr>
+                        </table>
 
 
                     </div>
