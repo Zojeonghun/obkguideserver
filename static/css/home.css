@@ -109,7 +109,6 @@ h2 {
 }
 
 .start_content {
-    display: none;
     flex-direction: column;
     color: white;
     
@@ -123,7 +122,6 @@ h2 {
 }
 
 .start_content2 {
-    display: none;
     flex-direction: column;
     color: white;
 }
