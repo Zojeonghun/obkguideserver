@@ -20,8 +20,25 @@ h4 {
     color: #053282;
 }
 
+.add_q_container {
+    margin-bottom: 40px;
+}
+.add_q_container div {
+    text-align: center;
+}
 
+.add_q_btn {
+    color: white;
+    background-color: #5Fa0af;
+    border: #5Fa0af 1px solid;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
 
+.add_q_btn:hover {
+    background-color: white;
+    color: #5fa0af;
+}
 
 .post_total_container {
     padding-left: 100px;
@@ -81,7 +98,7 @@ button {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 
