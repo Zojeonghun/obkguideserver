@@ -29,7 +29,7 @@
                                     <h1><a href="{% url 'feets:feet-detail' feet.pk %}">{{feet.name}}</a></h1>
                                 </div>
                                 <div class='h2'>
-                                    <h2 class='pc_feet_description'><a href="{% url 'feets:feet-detail' feet.pk %}">{{feet.description}}</a></h2>
+                                    <h2 class='pc_feet_description'><a href="{% url 'feets:feet-detail' feet.pk %}">{{feet.description|truncatechars:200}}</a></h2>
                                     <h2 class='mob_feet_description'><a href="{% url 'feets:feet-detail' feet.pk %}">{{feet.description|truncatechars:80}}</a></h2>
                                 </div>
                                 <div class='mob_date_container'>

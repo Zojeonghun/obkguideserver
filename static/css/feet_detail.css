@@ -65,7 +65,7 @@ h4 {
 }
 
 .data_name_desc {
-    height: 230px;
+    height: 350px;
 }
 
 .data_container_inner {
@@ -118,7 +118,7 @@ iframe {
     }
 
     .data_name_desc {
-        height: 200px;
+        height: 250px;
     }
     .data_container {
         margin-top: 0px;
@@ -148,7 +148,7 @@ iframe {
         margin-right: auto;
     }
     .data_name_desc {
-        height: 200px;
+        height: 250px;
     }
 
     .detail_container_total {
