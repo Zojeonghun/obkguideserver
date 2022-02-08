@@ -142,6 +142,32 @@ button {
     padding-left: 30px;
 }
 
+.p_search_none_title {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.p_search_none_reset_btn {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.p_search_none_reset_btn a {
+    border: #053282 1px solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #053282;
+}
+
+.p_search_none_reset_btn a:hover {
+    background-color: #053282;
+    color: white;
+}
+
+.p_search_none_title h1{
+    font-size: 20px;
+}
+
 @media (min-width:1440px) {
     .post_total_container {
         width: 1440px;

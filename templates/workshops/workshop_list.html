@@ -28,6 +28,7 @@
 
 
     <div id="map" style="width:100%;height:300px;"></div>
+    {% if workshops %}
     <div>
         <h3 style='text-align:center;margin-top:20px;font-size:13px'>아래 목록은 무작위 순서로 표시됩니다.</h3>
     </div>
@@ -41,6 +42,7 @@
         </tr>
 
 {% for workshop in workshops %}
+
         <tr class='workshop_list_container'>
             <td class='workshop_name'><h3>{{workshop.name}}</h3></td>
             <td class='workshop_address_text'><h3>{{workshop.address_text}}</h3></td>
@@ -57,6 +59,7 @@
             </td>
         </tr>
 {% endfor %}
+
     </table>
 <div class='mob_workshop_container'>
 {% for workshop in workshops %}
@@ -94,6 +97,8 @@
 {% endfor %}
 
 </div>
+
+
         <form method='get'>
 
             <div class='pagenator d-flex flex-row justify-content-center'>
@@ -123,6 +128,16 @@
             </div>
         </form>
 </div>
+{% else %}
+<div class='ws_search_none_title'>
+    <h1>조회되지 않습니다.</h1>
+    <h1>다시 한번 검색을 해보세요.</h1>
+    
+</div>
+<div class='ws_search_none_reset_btn'>
+    <a href='{% url 'workshops:workshop-list' %}'>전체보기</a>
+</div>
+{% endif %}
 {% endblock content %}
 
 {% block script %}

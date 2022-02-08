@@ -44,7 +44,7 @@
 
 
     <div class='post_container'>
-        
+        {% if posts %}
         {% for post in posts  %}
         <div class='post_container_inner'>
             <div class='btn_container'>
@@ -106,7 +106,16 @@
     </div>
 
 </div>
-
+{% else %}
+<div class='p_search_none_title'>
+    <h1>조회되지 않습니다.</h1>
+    <h1>다시 한번 검색을 해보세요.</h1>
+    
+</div>
+<div class='p_search_none_reset_btn'>
+    <a href='{% url 'posts:posts-list' %}'>전체보기</a>
+</div>
+{% endif %}
 {% endblock content %}
 
 {% block jquery %}
