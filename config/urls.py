@@ -5,6 +5,7 @@ from django.conf.urls.static import static
 from django.views.static import serve
 from django.conf.urls import url
 from django.urls import re_path
+from django.views.generic import TemplateView
 
 
 urlpatterns = [
@@ -15,6 +16,7 @@ urlpatterns = [
     path('workshops/', include('workshops.urls', namespace='workshops')),
     path('knees/', include('knees.urls', namespace='knees')),
     re_path(r'^media/(?P<path>.*)$', serve, {'document_root':settings.MEDIA_ROOT}), # 이부분 추가!!
+    path('robots.txt', TemplateView.as_view(template_name='robots.txt', content_type='text/plain'))
 ]
 
 if settings.DEBUG:
