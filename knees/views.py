@@ -74,7 +74,7 @@ def KneeListAllFilter(request):
         if name is not None:
             filter_args['name__contains']= name       
 
-        qs = models.Knee.objects.filter(**filter_args).order_by('id')
+        qs = models.Knee.objects.filter(**filter_args).order_by('-id')
 
         paginator = Paginator(qs, 5)
 
