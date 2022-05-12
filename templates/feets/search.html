@@ -20,7 +20,7 @@
             <p class='p_font_size start_dec'>아래 시작하기를 눌러 나에게 맞는<br>의지 발을 찾아보세요.</p>
             <div class='btn_container d-flex justify-content-center'>
                 <div class='btn_size'>
-                    <a class='btn_start btn_style'>시작하기</a>
+                    <a onclick="gtag('event','시작'{‘event_category’ : ‘의지발’)" class='btn_start btn_style'>시작하기</a>
                 </div>
             </div>
 
@@ -30,9 +30,9 @@
                     <p class='p_font_size'>Q1. 의족을 처음 착용합니까?</p>
                     <div class='d-flex flex-row justify-content-center'> 
                             <input type='radio' name='activity' value='11' id='activity_1'>
-                            <label onclick="gtag('event','의지발처음사용자')" href='#'  class='form-check-label' for='activity_1'><i class="fas fa-check"></i> 네</label>
+                            <label onclick="gtag('event','처음사용자'{‘event_category’ : ‘의지발’)" href='#'  class='form-check-label' for='activity_1'><i class="fas fa-check"></i> 네</label>
                             <input type='radio' name='activity' value='12' id='activity_2'>
-                            <label onclick="gtag('event','의지발기존사용자')" class='form-check-label' for='activity_2'><i class="fas fa-check"></i> 아니오</label>
+                            <label onclick="gtag('event','기존사용자'{‘event_category’ : ‘의지발’)" class='form-check-label' for='activity_2'><i class="fas fa-check"></i> 아니오</label>
                     </div>
                     <div class='btn_container d-flex justify-content-center'>
                         <div class='btn_size'>
@@ -48,9 +48,9 @@
                         <p class='p_font_size'>Q2. 방수 기능이 필요하십니까?<br>(물놀이, 샤워 등)</p>
                         <div class='d-flex flex-row justify-content-center'>
                                 <input type='radio' name='waterproof' value='1' id='waterproof_1'>
-                                <label onclick="gtag('event','의지발방수기능필요')" class='form-check-label' for='waterproof_1'><i class="fas fa-check"></i> 네</label>
+                                <label onclick="gtag('event','방수필요'{‘event_category’ : ‘의지발’)" class='form-check-label' for='waterproof_1'><i class="fas fa-check"></i> 네</label>
                                 <input type='radio' name='waterproof' value='2' id='waterproof_2'>
-                                <label onclick="gtag('event','의지발방수기능불필요')" class='form-check-label' for='waterproof_2'><i class="fas fa-check"></i> 아니오</label>
+                                <label onclick="gtag('event','방수불필요'{‘event_category’ : ‘의지발’)" class='form-check-label' for='waterproof_2'><i class="fas fa-check"></i> 아니오</label>
                         </div>
                     <div class='btn_container d-flex justify-content-center'>
                         <div class='btn_size'>
@@ -66,15 +66,15 @@
                     <p class='p_font_size'>Q3. 의족을 착용한 이후에도 원하는<br>활동을 선택해주세요.</p>
                     <div class='mob_select_3 justify-content-center'>
                             <input type='radio' name='hope' value='8' id='hope_1'>
-                            <label onclick="gtag('event','의지발곮프조깅활동')" class='form-check-label' for='hope_1'><i class="fas fa-check"></i> 골프, 조깅 등 걷기</label>
+                            <label onclick="gtag('event','골프조깅활동'{‘event_category’ : ‘의지발’)" class='form-check-label' for='hope_1'><i class="fas fa-check"></i> 골프, 조깅 등 걷기</label>
                             <input type='radio' name='hope' value='7' id='hope_2'>
-                            <label onclick="gtag('event','의지발테니스탁구활동')" class='form-check-label' for='hope_2'><i class="fas fa-check"></i> 테니스, 탁구 등 실내 운동</label>
+                            <label onclick="gtag('event','테니스탁구활동'{‘event_category’ : ‘의지발’)" class='form-check-label' for='hope_2'><i class="fas fa-check"></i> 테니스, 탁구 등 실내 운동</label>
                             <input type='radio' name='hope' value='6' id='hope_3'>
-                            <label onclick="gtag('event','의지발달리기활동')" class='form-check-label' for='hope_3'><i class="fas fa-check"></i> 달리기</label>
+                            <label onclick="gtag('event','달리기활동'{‘event_category’ : ‘의지발’)" class='form-check-label' for='hope_3'><i class="fas fa-check"></i> 달리기</label>
                             <input type='radio' name='hope' value='5' id='hope_4'>
-                            <label onclick="gtag('event','의지발과격한움직임')" class='form-check-label' for='hope_4'><i class="fas fa-check"></i> 과격한 움직임</label>
+                            <label onclick="gtag('event','과격한움직임'{‘event_category’ : ‘의지발’)" class='form-check-label' for='hope_4'><i class="fas fa-check"></i> 과격한 움직임</label>
                             <input type='radio' name='hope' value='9' id='hope_5'>
-                            <label onclick="gtag('event','의지발안전한실내')" class='form-check-label' for='hope_5'><i class="fas fa-check"></i> 안전한 실내 이동</label>
+                            <label onclick="gtag('event','안전한실내이동'{‘event_category’ : ‘의지발’)" class='form-check-label' for='hope_5'><i class="fas fa-check"></i> 안전한 실내 이동</label>
                     </div>
                     <div class='btn_container d-flex justify-content-center'>
                         <div class='btn_size'>
@@ -91,20 +91,20 @@
                     <p class='p_font_size'>Q4. 연령대를 선택해주세요.</p>
                     <div class='mob_select_4 justify-content-center'>
                             <input type='radio' name='age' value='1' id='age_1'>
-                            <label onclick="gtag('event','의지발30세이하')" class='form-check-label' for='age_1'><i class="fas fa-check"></i> 30세 이하</label>
+                            <label onclick="gtag('event','30세이하'{‘event_category’ : ‘의지발’)" class='form-check-label' for='age_1'><i class="fas fa-check"></i> 30세 이하</label>
                             <input type='radio' name='age' value='2' id='age_2'>
-                            <label onclick="gtag('event','의지발31세50세')" class='form-check-label' for='age_2'><i class="fas fa-check"></i> 31~50세</label>
+                            <label onclick="gtag('event','31세50세'{‘event_category’ : ‘의지발’)" class='form-check-label' for='age_2'><i class="fas fa-check"></i> 31~50세</label>
                             <input type='radio' name='age' value='3' id='age_3'>
-                            <label onclick="gtag('event','의지발51세70세')" class='form-check-label' for='age_3'><i class="fas fa-check"></i> 51~70세</label>
+                            <label onclick="gtag('event','51세70세'{‘event_category’ : ‘의지발’)" class='form-check-label' for='age_3'><i class="fas fa-check"></i> 51~70세</label>
                             <input type='radio' name='age' value='4' id='age_4'>
-                            <label onclick="gtag('event','의지발71세이상')" class='form-check-label' for='age_4'><i class="fas fa-check"></i> 71세 이상</label>
+                            <label onclick="gtag('event','71세이상'{‘event_category’ : ‘의지발’)" class='form-check-label' for='age_4'><i class="fas fa-check"></i> 71세 이상</label>
                     </div>
                     <div class='btn_container d-flex justify-content-center'>
                         <div class='btn_size'>
                             <a class='b4 b_hide btn_style'><i class="fas fa-arrow-left"></i> 이전</a>
                         </div>
                         <div class='btn_size'>
-                            <a class='btn_final btn_style'>완료 <i class="fas fa-arrow-right"></i></a>
+                            <a onclick="gtag('event','완료'{‘event_category’ : ‘의지발’)" class='btn_final btn_style'>완료 <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
