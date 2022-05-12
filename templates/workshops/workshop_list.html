@@ -48,12 +48,12 @@
             <td class='workshop_address_text'><h3>{{workshop.address_text}}</h3></td>
             <td class='workshop_number'><h3>{{workshop.number}}</h3></td>
             <td class='btn_map btn_width'>
-                <a class='{{workshop.address_y}}'id='{{workshop.address_x}}' href='#'>
+                <a onclick="gtag('event','{{workshop.name}}지도보기클릭')" class='{{workshop.address_y}}'id='{{workshop.address_x}}' href='#'>
                     <h4 class='map_text'>지도보기</h4>
                 </a>
             </td>
             <td class='btn_homepage btn_width'>
-                <a href='{{workshop.link}}' target='_blank'>
+                <a onclick="gtag('event','{{workshop.name}}홈페이지클릭')" href='{{workshop.link}}' target='_blank'>
                     <h4 class='map_text'>홈페이지</h4>
                 </a>
             </td>
@@ -83,12 +83,12 @@
         </div>
         <div class='d-flex flex-column align-self-center'>
             <div>
-                <a href='{{workshop.link}}' target='_blank'>
+                <a onclick="gtag('event','{{workshop.name}}홈페이지보기클릭')" href='{{workshop.link}}' target='_blank'>
                     <h6>홈페이지</h6>
                 </a>
             </div>
             <div class='btn_map'>
-                <a class='{{workshop.address_y}}'id='{{workshop.address_x}}' href='#'>
+                <a onclick="gtag('event','{{workshop.name}}지도보기클릭')" class='{{workshop.address_y}}'id='{{workshop.address_x}}' href='#'>
                     <h6>지도보기</h6>
                 </a>
             </div>
