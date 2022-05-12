@@ -51,7 +51,7 @@
                 <div class='category_box'>
                     <h4>{{post.category.get}}</h4>
                 </div>
-                <a class="btn_qna d-flex justify-content-between" data-bs-toggle="collapse" href="#multiCollapseExample{{post.id}}" role="button" aria-expanded="false" aria-controls="multiCollapseExample{{post.id}}">
+                <a onclick="gtag('event','QnA {{post.id}}')" class="btn_qna d-flex justify-content-between" data-bs-toggle="collapse" href="#multiCollapseExample{{post.id}}" role="button" aria-expanded="false" aria-controls="multiCollapseExample{{post.id}}">
                     <div><h2>Q. {{post.title}}</h2></div>
                     <i class="card_icon fas fa-angle-down"></i>
                 </a>
